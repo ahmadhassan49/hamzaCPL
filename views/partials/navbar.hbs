@@ -1,0 +1,16 @@
+<div class="row page-titles">
+    <div class="col-md-5 col-8 align-self-center">
+        <nav class="nav-wrap">
+            <li> <a href="/dashboard" class="{{#if (isActive '/dashboard' currentPath)}}active-btn{{/if}}"><i class="fa-solid fa-gauge"></i> Dashboard</a> </li>
+            <li> <a href="/profile" class="{{#if (isActive '/profile' currentPath)}}active-btn{{/if}}"><i class="fas fa-user-check"></i> Profile</a></li>
+            <li> <a href="/basic-table" class="{{#if (isActive '/basic-table' currentPath)}}active-btn{{/if}}"><i class="fa-solid fa-calendar-days"></i> Leave</a> </li>
+            <li> <a href="/attendance" class="{{#if (isActive '/attendance' currentPath)}}active-btn{{/if}}"><i class="fa-solid fa-file-pen"></i> Attendance</a> </li>
+            <li> <a href="/createleave" class="{{#if (isActive '/createleave' currentPath)}}active-btn{{/if}}"><i class="fa-solid fa-plus"></i> Create Leave</a> </li>
+            {{#isAdmin}}
+                <li> <a href="/register" class="{{#if (isActive '/register' currentPath)}}active-btn{{/if}}"><i class="fa-solid fa-plus"></i> Register</a> </li>
+                <li> <a href="/alluser" class="{{#if (isActive '/alluser' currentPath)}}active-btn{{/if}}"><i class="fa-solid fa-plus"></i> All user</a> </li>
+                <li> <a href="/role" class="{{#if (isActive '/role' currentPath)}}active-btn{{/if}}"><i class="fa-solid fa-plus"></i> Add Department</a> </li>
+            {{/isAdmin}}
+        </nav>
+    </div>
+</div>
